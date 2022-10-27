@@ -1,0 +1,13 @@
+public class TestLogin{
+    public static void main(String arguments[]){
+        Mahasiswa fadilah = new Mahasiswa("Fadilah", "123456", 083853501388D);
+
+        boolean result = fadilah.login(083853501388D, "123456");
+        System.out.println( result ? "Login berhasil" : "Login gagal");
+
+        Dosen fahrul = new Dosen("Fahrul","123456", "19990129");
+
+        result = fahrul.login("Fahrul", "123456", "19990129");
+        System.out.println( result ? "Login berhasil" : "Login gagal");
+    }
+}
